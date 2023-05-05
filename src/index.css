@@ -28,10 +28,10 @@
   }
 
   .galery {
-    background: url("./assets/img/bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("./assets/img/bgSmall.jpg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: repeat;
   }
 
   .btn__glow,
@@ -89,7 +89,7 @@
     z-index: 100;
     color: rgba(250, 250, 250, 1); /* set the text color to transparent */
     opacity: 0.5;
-    text-shadow: -1px -1px 0 #004cff, 1px -1px 0 #000, -1px 1px 0 #000,
+    text-shadow: -1px -1px 0 #031338, 1px -1px 0 #000, -1px 1px 0 #000,
       1px 1px 0 #000;
   }
 
@@ -102,6 +102,15 @@
   .fade-in-bottom.is-visible {
     opacity: 1;
     transform: translateY(0px);
+  }
+
+  @media (min-width: 600px) {
+    .galery {
+      background: url("./assets/img/bgLarge.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: 992px) {

@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 2500);
+    }, 3000);
   }, []);
 
   return (
@@ -22,7 +22,7 @@ function App() {
         <>
           <Header />
           <div className="galery">
-            <div className=" w-full h-full backdrop-blur-[2px]">
+            <div className=" w-full h-full backdrop-blur-[2px] bg-white/30">
               <InView triggerOnce="true">
                 {({ inView, ref }) => {
                   return (
@@ -64,9 +64,9 @@ function App() {
           </div>{" "}
         </>
       ) : (
-        <div className="w-full h-screen flex flex-col items-center justify-center gap-4">
-          <h1 className="title text-8xl">Party boat | DUBROVNIK</h1>
-          <h2 className="font-bold text-4xl title">WELCOME</h2>
+        <div className="w-full h-screen flex flex-col items-center justify-center gap-4 bg-blue-400/10">
+          <h1 className="title text-4xl lg:text-8xl">Party boat | DUBROVNIK</h1>
+          <h2 className="font-bold text-2xl lg:text-4xl title">WELCOME</h2>
           <BarLoader color="#36d7b7" size={200} />
         </div>
       )}
