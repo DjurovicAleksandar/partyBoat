@@ -139,9 +139,11 @@ function Contact() {
                 placeholder="Enter your message..."
               ></textarea>
             </label>
-            <button type="button" className="self-center btn__glow">
-              Book now
-            </button>
+            <input
+              type="submit"
+              className="self-center btn__glow cursor-pointer"
+              value="Book now"
+            />
           </form>
         </div>
       </section>
