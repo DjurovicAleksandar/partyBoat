@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import CountUp from "react-countup";
+import { InView, useInView } from "react-intersection-observer";
 
 function CountUpSection() {
   const countUp = [
@@ -17,7 +19,26 @@ function CountUpSection() {
               <h3 className="relative ml-2 inline-block text-3xl font-bold leading-none ">
                 <span className="absolute -top-6 -left-6 h-16 w-16 rounded-full bg-blue-200"></span>
                 <span className="relative">
-                  <CountUp start={0} end={number} duration={2} />
+                  <InView triggerOnce="true">
+                    {({ inView, ref }) => {
+                      return (
+                        <div ref={ref}>
+                          <CountUp start="0" end={number} duration={3}>
+                            {({ countUpRef, start }) => {
+                              if (inView) start();
+
+                              return (
+                                <div>
+                                  <span ref={countUpRef} />
+                                </div>
+                              );
+                            }}
+                          </CountUp>
+                        </div>
+                      );
+                    }}
+                  </InView>
+
                   {sign}
                 </span>
               </h3>

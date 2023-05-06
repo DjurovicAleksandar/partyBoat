@@ -7,7 +7,7 @@ function About({ visible }) {
     <div className="w-[90%] mx-auto relative">
       {/* Main box */}
       <div className="w-full h-full z-30 text-black font-semibold px-4 lg:px-8">
-        <div className="py-6 text-blue-900 sm:py-16">
+        <div className="py-28 text-blue-900 sm:py-16">
           <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
             <div className="relative flex flex-col lg:flex-row">
               <div className="pointer-events-none absolute -bottom-5 hidden h-24 w-24 rounded-full opacity-40 lg:block">
@@ -53,7 +53,7 @@ function About({ visible }) {
                 <p className="text-sm text-blue-900 uppercase font-black">
                   Numbers don't lie
                 </p>
-                <h2 className="text-blue-900/50 text-2xl font-black">
+                <h2 className="text-blue-900/70 text-2xl font-black">
                   <i>
                     Ideal for exclusive island tours and private parties, with
                     endless options for personalization.
@@ -61,14 +61,14 @@ function About({ visible }) {
                 </h2>
               </div>
               <div className="mx-auto mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:mt-16 lg:mr-0">
-                {visible && <CountUpSection />}
+                {visible && <CountUpSection visible={visible} />}
               </div>
             </div>
           </div>
         </div>
         {/* Services section */}
         <div className="">
-          <h2 className="mt-10 mb-3 text-center text-2xl font-thin text-blue-900/90 lg:w-[1000px] mx-auto">
+          <h2 className="mt-10 mb-3 text-center text-2xl font-thin text-blue-900 lg:w-[1000px] mx-auto">
             Experience the ultimate adventure on our private party boat. Enjoy
             drinks, food, and transportation while exploring the hidden gems of
             Dalmatia.

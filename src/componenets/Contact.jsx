@@ -3,7 +3,7 @@ function Contact() {
     <div id="contact" className="my-10 opacity-70">
       <section className="py-6 text-gray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-          <div className="aspect-square lg:bg-blue-400/60 hover:bg-blue-900 rounded-full flex flex-col items-center justify-center mr-4 p-4">
+          <div className="aspect-square lg:bg-blue-400/60 lg:hover:bg-blue-900 rounded-full flex flex-col items-center justify-center mr-4 p-4">
             <h1 className="text-xl md:text-4xl font-bold">Get in touch</h1>
             <p className="pt-2 pb-4">
               Fill in the form to start a conversation

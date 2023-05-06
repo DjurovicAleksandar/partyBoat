@@ -1,10 +1,9 @@
 import Nav from "./Nav";
-
 import bgVideo from "../assets/video/videoBG.mp4";
-
-//
+import { useEffect } from "react";
 
 function Header() {
+  useEffect(() => {}, []);
   return (
     <header className="h-screen w-full relative">
       <div className="h-full flex items-start justify-center">
@@ -19,11 +18,14 @@ function Header() {
               muted
               loop
             />
+            <div className="bg-gradient-to-b from-blue-400 absolute bottom-[-155px] w-full h-[10rem]"></div>
           </div>
 
           <div className="absolute inset-0 py-[7rem] px-4 lg:px-8 lg:py-[8rem] h-full z-20">
             <div>
-              <h1 className="title w-[100px] font-black text-5xl sm:text-8xl lg:text-9xl tracking-wider">
+              <h1
+                className={`title w-[100px] font-black text-[4rem] sm:text-8xl lg:text-9xl  tracking-wide`}
+              >
                 Party on <br /> Dalmatia waves
               </h1>
             </div>

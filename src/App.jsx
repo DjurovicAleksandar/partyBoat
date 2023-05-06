@@ -30,7 +30,7 @@ function App() {
                       className={`fade-in-bottom ${inView && "is-visible"}`}
                       ref={ref}
                     >
-                      <About visible={inView} />
+                      <About visible={InView} />
                     </div>
                   );
                 }}

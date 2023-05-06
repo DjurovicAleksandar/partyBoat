@@ -108,7 +108,7 @@
     .galery {
       background: url("./assets/img/bgLarge.jpg");
       background-size: cover;
-      background-position: center;
+      background-position: top;
       background-repeat: no-repeat;
     }
   }

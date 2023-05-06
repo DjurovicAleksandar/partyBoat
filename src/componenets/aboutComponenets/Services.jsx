@@ -29,12 +29,12 @@ function Services() {
     ],
     [
       "Scenic routes",
-      "The boat can take guests on scenic routes, including hidden coves and secluded beaches.",
+      "We can take guests on scenic routes, including hidden coves and secluded beaches.",
       tour,
     ],
     [
       "Transportation",
-      "The boat can provide transportation services for guests, including pickup and drop-off at a designated location.",
+      "We can provide transportation services for guests, including pickup and drop-off at a designated location.",
       transport,
     ],
   ];
@@ -45,7 +45,7 @@ function Services() {
         return (
           <div
             key={i}
-            className="flex aspect-square flex-col items-center justify-center gap-4  bg-blue-400/30 hover:bg-blue-400 shadow-xl rounded-full p-10"
+            className="flex flex-col items-center justify-center gap-4  bg-blue-400/30 hover:bg-blue-400 shadow-xl rounded-full py-16 px-10"
           >
             <h3 className="text-xl sm:text-3xl font-semibold">{title}</h3>
             <img width="50px" src={pic} />

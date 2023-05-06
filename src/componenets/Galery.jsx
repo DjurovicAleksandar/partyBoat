@@ -8,6 +8,14 @@ import pic6 from "../assets/img/galery/6.jpg";
 import pic7 from "../assets/img/galery/7.jpg";
 import pic8 from "../assets/img/galery/8.jpg";
 import pic9 from "../assets/img/galery/9.jpg";
+import pic11 from "../assets/img/galery/11.jpg";
+import pic12 from "../assets/img/galery/12.jpg";
+import pic13 from "../assets/img/galery/13.jpg";
+import pic14 from "../assets/img/galery/14.jpg";
+import pic15 from "../assets/img/galery/15.jpg";
+import pic16 from "../assets/img/galery/16.jpg";
+import pic17 from "../assets/img/galery/17.jpg";
+import pic18 from "../assets/img/galery/18.jpg";
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -17,9 +25,9 @@ function Galery() {
   const [open, setOpen] = useState(false);
 
   const images = [
-    [pic1, pic2, pic3],
-    [pic4, pic5, pic6],
-    [pic7, pic8, pic9],
+    [pic1, pic2, pic14],
+    [pic4, pic7, pic6],
+    [pic11, pic5, pic13],
   ];
 
   return (
@@ -46,6 +54,14 @@ function Galery() {
             { src: pic7, alt: "Picture 7" },
             { src: pic8, alt: "Picture 8" },
             { src: pic9, alt: "Picture 9" },
+            { src: pic11, alt: "Picture 11" },
+            { src: pic12, alt: "Picture 12" },
+            { src: pic13, alt: "Picture 13" },
+            { src: pic14, alt: "Picture 14" },
+            { src: pic15, alt: "Picture 15" },
+            { src: pic16, alt: "Picture 16" },
+            { src: pic17, alt: "Picture 17" },
+            { src: pic18, alt: "Picture 18" },
           ]}
         />
       </div>
@@ -55,7 +71,7 @@ function Galery() {
             return (
               <div key={i}>
                 <img
-                  className="w-[320px]  md:w-[14rem] max-w-full rounded-lg opacity-80 hover:opacity-100 ease-in duration-50  shadow-xl"
+                  className="aspect-square w-[320px]  md:w-[16rem] max-w-full rounded-lg opacity-80 hover:opacity-100 ease-in duration-50  shadow-xl"
                   src={img}
                   alt={`imgNumber${i}`}
                   style={{
@@ -71,7 +87,7 @@ function Galery() {
             return (
               <div key={i}>
                 <img
-                  className="w-[320px]  md:w-[14rem] max-w-full rounded-lg opacity-80 hover:opacity-100 ease-in duration-50 shadow-xl"
+                  className="aspect-square w-[320px]  md:w-[16rem] max-w-full rounded-lg opacity-80 hover:opacity-100 ease-in duration-50 shadow-xl"
                   src={img}
                   alt={`imgNumber${i}`}
                   style={{
@@ -87,7 +103,7 @@ function Galery() {
             return (
               <div key={i}>
                 <img
-                  className="w-[320px]  md:w-[14rem] max-w-full rounded-lg opacity-80 hover:opacity-100 ease-in duration-50 shadow-xl"
+                  className="aspect-square w-[320px]  md:w-[16rem] max-w-full rounded-lg opacity-80 hover:opacity-100 ease-in duration-50 shadow-xl"
                   src={img}
                   alt={`imgNumber${i}`}
                   style={{
