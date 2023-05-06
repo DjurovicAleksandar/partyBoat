@@ -95,7 +95,7 @@ function Contact() {
             </div>
           </div>
           <form
-            action="https://formsubmit.com/partyboatdubrovnik@outlook.com"
+            action="https://formsubmit.co/partyboatdubrovnik@outlook.com"
             method="POST"
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
           >
