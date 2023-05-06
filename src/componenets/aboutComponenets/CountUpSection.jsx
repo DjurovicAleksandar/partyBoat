@@ -29,7 +29,7 @@ function CountUpSection() {
 
                               return (
                                 <div>
-                                  <span ref={countUpRef} />
+                                  {sign} <span ref={countUpRef} />
                                 </div>
                               );
                             }}
@@ -38,8 +38,6 @@ function CountUpSection() {
                       );
                     }}
                   </InView>
-
-                  {sign}
                 </span>
               </h3>
               <span className="ml-3 text-base font-medium capitalize z-10">
