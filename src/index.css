@@ -28,10 +28,10 @@
   }
 
   .galery {
-    background: url("./assets/img/bgSmall.jpg");
-    background-size: contain;
+    background: url("./assets/img/bgLarge.jpg");
+    background-size: cover;
     background-position: bottom;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
   }
 
   .btn__glow,
@@ -40,12 +40,12 @@
     width: fit-content;
     padding: 8px 28px;
     border-radius: 8px;
-    background-color: rgba(96, 165, 250);
+    background-color: rgb(96, 165, 250);
     transition: all 0.1s ease-in-out;
     color: white;
   }
   .btn__header__1 {
-    box-shadow: 0 0 50px rgb(96 165 250);
+    box-shadow: 0 0 20px rgb(96 165 250);
   }
 
   .btn__header__1:hover {
@@ -87,10 +87,11 @@
 
   .title {
     z-index: 100;
-    color: rgba(250, 250, 250, 1); /* set the text color to transparent */
-    opacity: 0.5;
-    text-shadow: -1px -1px 0 #031338, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
+    color: #102948;
+    /* color: #102948; */
+    opacity: 0.9;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0#FFF,
+      1px 1px 0 #fff;
   }
 
   .fade-in-bottom {
@@ -105,17 +106,10 @@
   }
 
   @media (min-width: 600px) {
-    .galery {
-      background: url("./assets/img/bgLarge.jpg");
-      background-size: cover;
-      background-position: top;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .rotate-lg-6 {
-      transform: rotate(6deg);
+    @media (min-width: 992px) {
+      .rotate-lg-6 {
+        transform: rotate(6deg);
+      }
     }
   }
 }

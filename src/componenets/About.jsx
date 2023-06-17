@@ -7,6 +7,7 @@ function About({ visible }) {
     <div className="w-[90%] mx-auto relative">
       {/* Main box */}
       <div className="w-full h-full z-30 text-black font-semibold px-4 lg:px-8">
+        {/**/}
         <div className="py-28 text-blue-900 sm:py-16">
           <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
             <div className="relative flex flex-col lg:flex-row">
@@ -82,7 +83,7 @@ function About({ visible }) {
           </div>
         </div>
       </div>
-      {/* Backgrounhd */}
+      {/* Background */}
       <div className=" w-full h-full z-0 flex items-end">
         <h2 className="text-5xl lg:text-7xl text-center font-black text-blue-900/40">
           Why go on a regular cruise when you can go on a customized adventure

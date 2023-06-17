@@ -6,9 +6,11 @@ import Contact from "./componenets/Contact";
 import Footer from "./componenets/Footer";
 import { InView } from "react-intersection-observer";
 import BarLoader from "react-spinners/BarLoader";
+import Nav from "./componenets/Nav";
+import partyBoat2 from "../src/assets/video/partyBoat2.mp4";
 
 function App() {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,9 +22,19 @@ function App() {
     <>
       {loaded ? (
         <>
+          <Nav />
           <Header />
+          {/*Video*/}
+          <video
+            className="w-[310px] sm:w-[600px] lg:w-[800px] h-auto object-cover mx-auto mt-28"
+            src={partyBoat2}
+            alt="party boat video"
+            autoPlay
+            muted
+            loop
+          />
           <div className="galery">
-            <div className=" w-full h-full backdrop-blur-[2px] bg-white/30">
+            <div className=" w-full h-full backdrop-blur-[2px] bg-white/40">
               <InView triggerOnce="true">
                 {({ inView, ref }) => {
                   return (
@@ -35,6 +47,7 @@ function App() {
                   );
                 }}
               </InView>
+
               <InView triggerOnce="true">
                 {({ inView, ref }) => {
                   return (
