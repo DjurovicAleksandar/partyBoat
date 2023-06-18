@@ -11,8 +11,10 @@ function Contact() {
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="w-full relative">
             <div className="aspect-square flex flex-col items-center justify-center mr-4 p-4 absolute inset-0 w-full h-full z-50 font-bold">
-              <h1 className="text-xl md:text-4xl font-bold">Get in touch</h1>
-              <p className="pt-2 pb-4">
+              <h1 className="text-xl md:text-4xl font-bold text-[#f24603e0] bg-black/70 py-2 px-4 rounded-md">
+                Get in touch
+              </h1>
+              <p className="pt-2 pb-4 text-[#f24603e0]  bg-black/70 py-1 px-2 rounded-md">
                 Fill in the form to start a conversation
               </p>
               <ContactOptions />
@@ -22,7 +24,7 @@ function Contact() {
               <img
                 src={window.innerWidth > 650 ? contactBg : blackPhone}
                 alt="phone"
-                className="lg:-translate-y-[5rem] lg:-translate-x-[18rem] z-0"
+                className="lg:-translate-y-[5rem] lg:-translate-x-[18rem] z-0 translate-x-2 -translate-y-[13rem]"
               />
             </div>
           </div>

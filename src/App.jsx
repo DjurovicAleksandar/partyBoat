@@ -9,8 +9,16 @@ import BarLoader from "react-spinners/BarLoader";
 import Nav from "./componenets/Nav";
 import partyBoat2 from "../src/assets/video/partyBoat2.mp4";
 
+import ModalVideo from "react-modal-video";
+import "react-modal-video/css/modal-video.min.css";
+
 function App() {
-  const [loaded, setLoaded] = useState(true);
+  const [loaded, setLoaded] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,14 +33,27 @@ function App() {
           <Nav />
           <Header />
           {/*Video*/}
-          <video
-            className="w-[310px] sm:w-[600px] lg:w-[800px] h-auto object-cover mx-auto mt-28"
-            src={partyBoat2}
-            alt="party boat video"
-            autoPlay
-            muted
-            loop
-          />
+          <div className="flex flex-col gap-2">
+            <video
+              className="w-[310px] sm:w-[600px] lg:w-[800px] h-auto object-cover mx-auto mt-28"
+              src={partyBoat2}
+              alt="party boat video"
+              autoPlay
+              muted
+              loop
+            />
+            <div>
+              <ModalVideo
+                channel="youtube" // Set the video source (e.g., 'youtube', 'vimeo', 'dailymotion')
+                isOpen={isOpen}
+                videoId="YFxW_K_6xxk" // Replace with the ID or URL of your video
+                onClose={() => setIsOpen(false)}
+              />
+              <button className="btn__glow mx-auto mt-2" onClick={openModal}>
+                Full screen
+              </button>
+            </div>
+          </div>
           <div className="galery">
             <div className=" w-full h-full backdrop-blur-[1px] bg-white/40">
               <InView triggerOnce="true">
