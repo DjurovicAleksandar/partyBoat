@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;900&display=swap");
+@font-face {
+  font-family: "Elephant";
+  src: url("../fonts/elephant.ttf") format("truetype");
+  /* Adjust the path and format according to the downloaded font file */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +23,7 @@
   }
 
   body {
-    font-family: "Playfair Display", serif;
+    font-family: "Elephant", sans-serif;
     background-color: #fff;
   }
 
@@ -40,12 +45,17 @@
     width: fit-content;
     padding: 8px 28px;
     border-radius: 8px;
-    background-color: rgb(96, 165, 250);
+    /* background-color: rgb(96, 165, 250); */
+    background-color: #d64912e0;
     transition: all 0.1s ease-in-out;
     color: white;
   }
   .btn__header__1 {
-    box-shadow: 0 0 20px rgb(96 165 250);
+    box-shadow: 0 0 25px #f24603e0;
+    width: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
   }
 
   .btn__header__1:hover {
@@ -53,7 +63,7 @@
   }
 
   .btn__header__2:hover {
-    box-shadow: 0 0 35px rgb(96 165 250);
+    box-shadow: 0 0 35px #f24603e0;
     letter-spacing: 0.1rem;
   }
 
@@ -62,7 +72,7 @@
   }
 
   .btn__glow:hover {
-    box-shadow: 0 0 35px rgb(96 165 250);
+    box-shadow: 0 0 35px #f24603e0;
     letter-spacing: 0.1rem;
   }
 
@@ -74,7 +84,7 @@
     content: "";
     width: 0%;
     height: 1px;
-    background-color: #6699cc;
+    background-color: #f24603e0;
     position: absolute;
     transition: width 0.2s;
   }
@@ -87,11 +97,26 @@
 
   .title {
     z-index: 100;
-    color: #102948;
+    color: #d64a12;
     /* color: #102948; */
-    opacity: 0.9;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0#FFF,
-      1px 1px 0 #fff;
+    opacity: 0.8;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 1px #dca80d, -1px 1px 0#fff,
+      1px 1px 0 #dca80d;
+  }
+
+  .text__container {
+    background: url("src/assets/img/services/party.jpg") no-repeat center center;
+    background-size: 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .text__container2 {
+    background: url("src/assets/img/services/scene.jpg") no-repeat center center;
+    background-size: 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 
   .fade-in-bottom {

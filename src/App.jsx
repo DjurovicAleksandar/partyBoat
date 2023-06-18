@@ -34,7 +34,7 @@ function App() {
             loop
           />
           <div className="galery">
-            <div className=" w-full h-full backdrop-blur-[2px] bg-white/40">
+            <div className=" w-full h-full backdrop-blur-[1px] bg-white/40">
               <InView triggerOnce="true">
                 {({ inView, ref }) => {
                   return (

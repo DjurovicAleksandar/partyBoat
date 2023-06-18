@@ -16,6 +16,9 @@ import pic15 from "../assets/img/galery/15.jpg";
 import pic16 from "../assets/img/galery/16.jpg";
 import pic17 from "../assets/img/galery/17.jpg";
 import pic18 from "../assets/img/galery/18.jpg";
+import pic19 from "../assets/img/galery/19.jpg";
+import pic20 from "../assets/img/galery/20.jpg";
+import pic21 from "../assets/img/galery/21.jpg";
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -34,7 +37,7 @@ function Galery() {
     <div className="w-[90%] mx-auto flex flex-col items-center justify-center ">
       <div>
         <button
-          className="btn__glow bg-blue-400 my-10"
+          className="btn__glow bg-[#f24603e0] my-10"
           type="button"
           onClick={() => setOpen(true)}
         >
@@ -62,6 +65,9 @@ function Galery() {
             { src: pic16, alt: "Picture 16" },
             { src: pic17, alt: "Picture 17" },
             { src: pic18, alt: "Picture 18" },
+            { src: pic19, alt: "Picture 19" },
+            { src: pic20, alt: "Picture 20" },
+            { src: pic21, alt: "Picture 21" },
           ]}
         />
       </div>

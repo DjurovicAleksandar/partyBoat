@@ -1,9 +1,9 @@
-import audio from "../../assets/img/services/audio.png";
-import catering from "../../assets/img/services/catering.png";
-import crew from "../../assets/img/services/crew.png";
-import custom from "../../assets/img/services/custom.png";
-import tour from "../../assets/img/services/tour.png";
-import transport from "../../assets/img/services/transport.png";
+import party from "../../assets/img/services/party.jpg";
+import audio from "../../assets/img/services/audio.jpg";
+import crew from "../../assets/img/services/crew.jpg";
+import food from "../../assets/img/services/food.jpg";
+import route from "../../assets/img/services/route.jpg";
+import scene from "../../assets/img/services/scene.jpg";
 
 function Services() {
   const services = [
@@ -15,7 +15,7 @@ function Services() {
     [
       "Special occasions",
       "The boat can be customized for special occasions such as weddings, bachelor/bachelorette parties, and birthdays.",
-      custom,
+      party,
     ],
     [
       "Onboard entertainment",
@@ -25,17 +25,17 @@ function Services() {
     [
       "Food & drinks",
       "Catering and customizable menus for private events, specialty cocktails, extensive wine and beer selection.",
-      catering,
+      food,
     ],
     [
       "Scenic routes",
       "We can take guests on scenic routes, including hidden coves and secluded beaches.",
-      tour,
+      scene,
     ],
     [
       "Transportation",
       "We can provide transportation services for guests, including pickup and drop-off at a designated location.",
-      transport,
+      route,
     ],
   ];
 
@@ -45,11 +45,21 @@ function Services() {
         return (
           <div
             key={i}
-            className="flex flex-col items-center justify-center gap-4  bg-blue-400/30 hover:bg-blue-400 shadow-xl rounded-full py-16 px-10"
+            className="group flex flex-col items-center justify-center gap-4 shadow-xl relative overflow-hidden rounded-lg"
           >
-            <h3 className="text-xl sm:text-3xl font-semibold">{title}</h3>
-            <img width="50px" src={pic} />
-            <span className="text-sm font-light">{text}</span>
+            <img
+              className="w-full rounded-lg group-hover:scale-125 ease-linear duration-300"
+              src={pic}
+              alt={title}
+            />
+            <div className="absolute inset-0 w-full h-full bg-black/30 rounded-lg group-hover:backdrop-blur-[2px]">
+              <h2 className="text-2xl lg:text-3xl sfont-black tracking-wide mt-10 px-6">
+                {title}
+              </h2>
+              <p className="opacity-0 text-xs sm:text-base w-[200px] mx-auto mt-3 lg:mt-[12rem] group-hover:opacity-100 ease-linear duration-300">
+                {text}
+              </p>
+            </div>
           </div>
         );
       })}

@@ -15,7 +15,7 @@ function Footer() {
                 <div className="flex items-center justify-center w-12 h-12 rounded-full ">
                   <img src={fratija} alt="logo" />
                 </div>
-                <span className="self-center text-2xl font-semibold">
+                <span className="self-center text-xl font-semibold">
                   Part Boat | DUBROVNIK
                 </span>
               </a>

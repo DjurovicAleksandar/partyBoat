@@ -57,12 +57,12 @@ function Header() {
                   >
                     <div className="mt-28">
                       <h1
-                        className={`title w-[100px] lg:w-[500px] font-black text-[3rem] sm:text-5xl lg:text-9xl tracking-widest ml-8 lg:ml-28`}
+                        className={`title w-[100px] lg:w-[500px] font-black text-[3rem] sm:text-5xl lg:text-8xl tracking-widest ml-8 lg:ml-28`}
                       >
                         {title}
                       </h1>
 
-                      <div className="absolute bottom-[1rem] md:right-40 flex gap-4 mt-28 z-50">
+                      <div className="absolute bottom-[1rem] md:right-40 flex gap-4 mt-28 z-50 px-5">
                         <button
                           onClick={() => window.open("tel:+385989004143")}
                           className="btn__header btn__header__2"
