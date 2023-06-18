@@ -53,7 +53,7 @@ function Services() {
               alt={title}
             />
             <div className="absolute inset-0 w-full h-full bg-black/30 rounded-lg group-hover:backdrop-blur-[2px]">
-              <h2 className="text-2xl lg:text-3xl sfont-black tracking-wide mt-10 px-6">
+              <h2 className="text-xl lg:text-3xl sfont-black tracking-wide mt-10">
                 {title}
               </h2>
               <p className="opacity-0 text-xs sm:text-base w-[200px] mx-auto mt-3 lg:mt-[12rem] group-hover:opacity-100 ease-linear duration-300">
