@@ -105,14 +105,14 @@
   }
 
   .text__container {
-    background: url("src/assets/img/services/party.jpg") no-repeat center center;
+    background: url("https://i.imgur.com/60Jm7qe.jpeg") no-repeat center center;
     background-size: 100%;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
   }
   .text__container2 {
-    background: url("src/assets/img/services/scene.jpg") no-repeat center center;
+    background: url("https://i.imgur.com/Mpz8Lzn.jpeg") no-repeat center center;
     background-size: 100%;
     color: transparent;
     -webkit-background-clip: text;
