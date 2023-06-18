@@ -98,8 +98,10 @@ function App() {
           </div>{" "}
         </>
       ) : (
-        <div className="w-full h-screen flex flex-col items-center justify-center gap-4 bg-blue-400/10">
-          <h1 className="title text-4xl lg:text-8xl">Party boat | DUBROVNIK</h1>
+        <div className="galery w-full h-screen flex flex-col items-center justify-center gap-4 bg-blue-400/10">
+          <h1 className="text-4xl lg:text-8xl text__container">
+            Party boat | DUBROVNIK
+          </h1>
           <h2 className="font-bold text-2xl lg:text-4xl title">WELCOME</h2>
           <BarLoader color="#36d7b7" size={200} />
         </div>
