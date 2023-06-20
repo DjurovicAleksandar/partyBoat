@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Elephant";
-  src: url("../fonts/elephant.ttf") format("truetype");
-  /* Adjust the path and format according to the downloaded font file */
+  src: url("../src/fonts/ELEPHNT.TTF") format("truetype");
 }
 
 @tailwind base;
@@ -23,7 +22,7 @@
   }
 
   body {
-    font-family: "Elephant", sans-serif;
+    font-family: "Elephant", serif;
     background-color: #fff;
   }
 
